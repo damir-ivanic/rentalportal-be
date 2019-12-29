@@ -1,0 +1,3 @@
+﻿EntityFrameworkCore\Update-Database -Project rentalportal.data.ef.migrations -StartUpProject rentalportal.api -Context RentalPortalContext
+
+EntityFrameworkCore\Add-Migration -Project rentalportal.data.ef.migrations -StartUpProject rentalportal.api -Context RentalPortalContext -Name TODO

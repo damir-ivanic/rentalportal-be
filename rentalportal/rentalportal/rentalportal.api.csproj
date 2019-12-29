@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="4.9.2" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="4.4.0" />
+    <PackageReference Include="AutoMapper" Version="8.1.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.1.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore " Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor " Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions " Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Html.Abstractions " Version="2.2.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\rentalporta.data.ef\rentalportal.data.ef.csproj" />
+    <ProjectReference Include="..\rentalportal.data.ef.migrations\rentalportal.data.ef.migrations.csproj" />
+    <ProjectReference Include="..\rentalportal.domain.services\rentalportal.domain.services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Update="Microsoft.EntityFrameworkCore.Abstractions" Version="2.2.4" />
+  </ItemGroup>
+
+</Project>
